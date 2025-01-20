@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>The Eagle’s Masque | Project Gutenberg</title>
+<link rel="icon" href="images/cover.jpg" type="image/x-cover" >
+
+<style>
+body {
+  font-size: large;
+  line-height: 1.7;
+}
+h1, h2 {
+  text-align: center;
+  text-indent: 0;
+}
+h1, h2 {
+  font-weight: normal;
+  page-break-before: always;
+}
+h1 {
+  line-height: 3;
+  font-size: 200%;
+  letter-spacing: 0.2em;
+}
+h2 {
+  line-height: 2.5;
+  font-size: 150%;
+  word-spacing: 0.333em;
+}
+h1 small, h2 small {
+  font-size: 50%;
+}
+div.titlepage, div.preface, div.plate, div.adverts {
+  margin: 4em auto;
+  page-break-before: always;
+}
+div.titlepage {
+  text-align: center;
+  text-indent: 0;
+}
+div.titlepage .poetry {
+  font-size: 75%;
+  line-height: 1.15;
+}
+div.titlepage .poetry-container {
+  padding: 3em 0;
+}
+div.author {
+  font-size: larger;
+  text-align: center;
+  text-indent: 0;
+  padding: 1em 0;
+  letter-spacing: 0.15em;
+}
+div.allsc {
+  padding: 1.5em 3em;
+  text-indent: 0;
+  text-align: left;
+}
+.fancy {
+  font-family: "GoudyHandtooled BT", serif;
+}
+div.plate {
+  line-height: 1.15;
+  font-size: medium;
+  text-align: center;
+  text-indent: 0;
+}
+div.adverts {
+  line-height: normal;
+  page-break-after: always;
+}
+.adverts h2 {
+  line-height: 1.25;
+  font-size: 120%;
+  word-spacing: 0.2em;
+}
+
+p {
+  text-align: justify;
+  margin: 0;
+  text-indent: 1.5em;
+}
+.noindent {
+  text-indent: 0;
+}
+.Initial {
+  font-size: 150%;
+}
+.poetry-container {
+  display: flex; /* https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/ */
+  justify-content: center;
+}
+.poetry {
+  text-align: left;
+  word-spacing: 0.2em;
+}
+.poetry div {
+  margin: 0;
+  padding-left: 6em;
+  text-indent: -6em;
+}
+.poetry .i1 {
+  text-indent: -4.5em;
+}
+.poetry .i8 {
+  text-indent: 4em;
+}
+.poetry .i10 {
+  text-indent: 8em;
+}
+.poetry .i12 {
+  text-indent: 12em;
+}
+.pr8 {
+  padding-right: 8em;
+}
+/* for the braces used by the original book to denote a rhyming triplet */
+.tri1, .tri2, .tri3 {
+  border-right: medium solid;
+  padding-right: 0.75em;
+}
+.tri1 {
+  page-break-after: avoid;
+  border-top-right-radius: 0.666em; /* https://www.w3.org/TR/2023/CRD-css-backgrounds-3-20230214/
+                                       implemented in browsers since 2005 */
+}
+.tri2 {
+  page-break-after: avoid;
+  page-break-before: avoid;
+ 
+}
+.tri3 {
+  page-break-before: avoid;
+  border-bottom-right-radius: 0.666em;
+}
+div.rt {
+  text-align: right;
+  text-indent: 0;
+  padding-right: 1.5em;
+}
+div.rt1 {
+  text-align: right;
+  text-indent: 0;
+  padding-right: 3em;
+}
+div.lt8 {
+  text-align: left;
+  text-indent: 0;
+  padding-left: 8em;
+}
+div.lt10 {
+  text-align: left;
+  text-indent: 0;
+  padding-left: 10em;
+}
+div.fin {
+  padding: 4em 0;
+  text-align: center;
+  text-indent: 0;
+}
+div.printer {
+  text-align: left;
+  text-indent: 0;
+}
+div.printer div {
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.25em;
+  font-size: small;
+  line-height: 1.15;
+  border-top: thin solid;
+}
+hr.ww {
+  width: 100%;
+  height: 0.25em;
+  margin: 1em 0;
+}
+hr.aitf {
+  width: 12%;
+  margin: 1em 44%;
+  height: 0.1em;
+  background-color: black;
+}
+/* fake hr for double rules */
+.hr1, .hr2 {
+  display: block;
+  width: 10em;
+  height: 0.3em;
+  line-height: 0.3em;
+  padding: 0;
+}
+.hr1 {
+  border-top: thick solid black;
+  border-bottom: thin solid black;
+  margin: 3em auto 0 auto;
+}
+.hr2 {
+  border-bottom: thick solid black;
+  border-top: thin solid black;
+  margin: 0 auto 3em auto;
+}
+.hr1 hr, .hr2 hr {
+  display: none;
+}
+.smallrule {
+  padding: 1em 0;
+  width: 6em;
+}
+
+.ns {display: none; visibility: hidden; }
+.nw {white-space: nowrap; }
+em {font-style: italic; }
+.smc {font-variant: small-caps; }
+.allsc {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+.big {font-size: larger; }
+div.vsprd {line-height: 1.7; }
+.nosprd {letter-spacing: normal; }
+div.ib {display: inline-block; }
+.nobrk {page-break-after: avoid; }
+.ctr {
+  text-align: center;
+  text-indent: 0;
+}
+.pb1 {padding-bottom: 1em; }
+.pb2 {padding-bottom: 2em; }
+.pt1 {padding-top: 1em; }
+.pubyear {
+  border-top: thin solid;
+}
+/* page numbers */
+span.pagenum {
+  display: none; visibility: hidden; /* over-ridden for screen devices */
+  font-size: x-small;
+  font-family: serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-indent: 0;
+  text-align: left;
+  margin: 0;
+  padding: .05em 0.5em;
+}
+a:link, a:visited {text-decoration: none; }
+
+img {
+  max-width: 100%;
+  max-height: 100vh; /* https://www.w3.org/TR/2022/CR-css-values-3-20221201/ */
+}
+
+@media print {
+  a:link {
+    color: black;
+    background-color: inherit;
+  }
+  a:visited {
+    color: black;
+    background-color: inherit;
+  }
+}
+@media screen {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  span.pagenum {
+    border-top: thin solid silver;
+    border-bottom: thin solid silver;
+    display: inline;
+    visibility: visible;
+    position: absolute;
+    left: 1%;
+  }
+}
+@media print, screen {
+  div.titlepage, div.preface, div.poetry-container, div.fin, div.printer {
+    max-width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.adverts {
+    max-width: 24em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* overrides for epub */
+body .x-ebookmaker {
+    margin-left: 0;
+    margin-right: 0;
+}
+.x-ebookmaker span.pagenum, .x-ebookmaker hr.ww {
+    display: none;
+    visibility: hidden;
+}
+/* for full-page vertically centred: print and epub */
+@media print {
+  .fp {
+    display: flex; /* https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/ */
+    justify-content: center;
+    height: 100vh; /* https://www.w3.org/TR/2022/CR-css-values-3-20221201/ */
+    page-break-before: always;
+    page-break-after: always;
+}
+  .vcenter {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.x-ebookmaker .fp {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  page-break-before: always;
+  page-break-after: always;
+}
+.x-ebookmaker .vcenter {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  page-break-inside: avoid;
+}
+
+
+</style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of The eagle&#039;s masque, by Tom Tit</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: The eagle&#039;s masque</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Tom Tit</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: April 1, 2023 [eBook #70437]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: David Wilson (This file was produced from images generously made available by The Internet Archive)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK THE EAGLE&#039;S MASQUE ***</div>
+
+<hr class="ww" >
+
+<div class="plate fp vsprd">
+<div class="vcenter">
+<figure>
+<i class="big">FRONTISPIECE.</i><br
+ ><img src="images/frontis.jpg" alt="[Plate]">
+<figcaption>
+<i>Queen Eagle sends greeting</i>—<span class="smc">A Grand Masquerade</span>.<br
+ ><small><i>Pub. by J. Mawman, Poultry. April 2—1808.</i></small>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="titlepage fp">
+<div class="vcenter">
+<h1 title="The Eagle’s Masque"><a id="pg1" href="#pg1"><span class="pagenum"><span
+ class="ns">[</span>i<span class="ns">]<br
+ ></span></span></a>
+
+<small class="nosprd">THE</small><br
+ >EAGL<span class="nosprd">E’</span>S MASQU<span class="nosprd">E.</span></h1>
+
+<img src="images/rule.jpg" class="pb2" alt="[Decorative rule]">
+
+<div class="author"><span class="nosprd">By</span> TOM TI<span class="nosprd">T.</span></div>
+
+<div class="hr1"><hr ></div>
+<div class="poetry-container">
+<div class="poetry">
+<div>Here, birds of all feathers, all habits, all sizes,</div>
+<div>All tongues, and all climates, are met in disguises.</div>
+</div></div>
+<div class="hr2"><hr ></div>
+
+<div><i>THE SECOND EDITION.</i></div>
+
+<img src="images/rule.jpg" class="smallrule" alt="[Decorative rule]">
+
+<div>PRINTED FOR J. MAWMAN, POULTRY;<br
+ ><span class="allsc pb1">BY G. WOODFALL, PATERNOSTER-ROW.</span></div>
+<div class="pt1"><span class="big pubyear"><small>1808.</small></span></div>
+
+</div>
+</div>
+
+<div class="preface">
+<h2 title="To the juvenile world"><a id="pgiii" href="#pgiii"><span class="pagenum"><span
+ class="ns">[</span>iii<span class="ns">]<br
+ ></span></span></a>
+<small>TO THE</small><br
+ ><i class="fancy">JUVENILE WORLD.</i></h2>
+
+<hr class="aitf">
+
+<div class="allsc">MY DEAR GIRLS AND BOYS,</div>
+
+<p><span class="smc">If</span> “The Eagle’s Masque” should afford you half
+the pleasure which I have myself received from “The
+Peacock at Home,” I will make no further demands upon
+your approbation.</p>
+
+<p>My Brothers and Sisters in this line of literature are
+accustomed to distinguish particular passages in their
+poems by remarks, or explanations at the bottom of the
+page.—I do not intend, however, to follow their example.
+What I wish is, that you should first get through all your
+laughing, without interruption; reserving for you afterwards the useful
+amusement of picking out further information for yourselves,
+as you will find it in those books of
+<a id="pgiv" href="#pgiv"><span class="pagenum"><span
+ class="ns">[</span>iv<span class="ns">]
+ </span></span></a>Natural History, with coloured figures, which your Parents,
+or Tutors, will have the goodness to lay before you
+for that purpose.</p>
+
+<p>In the next place, I have great pride, and pleasure,
+in being able to assure you, that I have not, in a single
+instance, knowingly set down any circumstance relating,
+in a <em>general</em> way, to the persons, lives, and manners,
+of my feathered Characters, which you may not find to
+be strictly true. If some cases should occur, in which this
+assertion may puzzle, or surprize you, your kind friends
+above mentioned will make the proper distinctions for you;
+and then, you will find every thing as it should be.</p>
+
+<p class="nobrk">And so, recommending my Birds, and myself, to your
+favour and protection,</p>
+
+<div class="lt8 nobrk">  I remain</div>
+<div class="lt10 nobrk">    your affectionate Friend,</div>
+<div class="rt1 nobrk">      and Play-fellow,</div>
+<div class="rt">        TOM TIT.</div>
+
+</div>
+
+<h2 title="The Eagle’s Masque"><a id="pg5" href="#pg5"><span class="pagenum"><span
+ class="ns">[</span>5<span class="ns">]<br
+ ></span></span></a>
+<small>THE</small><br
+ >EAGLE’S MASQUE.</h2>
+
+<div class="poetry-container">
+<div class="poetry">
+<div><span class="Initial">W</span>HEN “The Butterfly’s Ball,” and the “Grass-hopper’s Feast,”</div>
+<div>Had resounded abroad from the west to the east,</div>
+<div>The <i>Peacock</i>, whose bosom is vanity’s station,</div>
+<div>In a trice was “At Home” to the feather’d <span class="nw">Creation.—</span></div>
+<div>The trumpet of Fame was more active than ever:</div>
+<div>The Gala so gay!—the arrangements <span class="nw">so clever!—</span></div>
+<div class="tri1">The Genius of Mirth flew in every direction;</div>
+<div class="tri2">The Queen on her ... cliff caught the raging infection,</div>
+<div class="tri3">And joy flourished under the royal protection.</div>
+<div class="i1"><span class="ns">      </span>Soon, the Birds, cock-a-hoop at the call of their betters,</div>
+<div>To Court were invited by circular letters:</div>
+<div>The <i>Pigeon</i> in waiting flew round, and display’d</div>
+<div>“<i>Queen Eagle sends Greeting</i>—<span class="smc">A Grand Masquerade</span>.”</div>
+<div>Of a grand Masquerade not a notion had <span class="nw">they—</span></div>
+<div>And Birds are as curious as Ladies, they say.</div>
+<div>What impatience was felt to be ready and drest!</div>
+<div>Not a bird, nor a birdling could sleep in her nest.</div>
+<div>What fighting for Characters!—shifting of plumes!</div>
+<div>How the <span class="smc">Raven</span> desponds, and the <span class="smc">Peacock</span> presumes!</div>
+<div class="i1"><a id="pg6" href="#pg6"><span class="pagenum"><span
+ class="ns">[</span>6<span class="ns">]
+ </span></span></a><span class="ns">      </span>At length ’tis arriv’d—the grand, critical Night!</div>
+<div>And by thousands they throng to the scene of delight.</div>
+<div>Not a fowl staid at home that had spirits, or <span class="nw">wings—</span></div>
+<div>Every Biped was there that pecks, flutters, or sings.</div>
+<div>The Empress received them with affable grace,</div>
+<div>In an Aviary built at her favourite Place;</div>
+<div>Though, ’twas notic’d, she coldly accosted the <span class="smc">Gull</span>,</div>
+<div>Who had guarded some sheep from her Majesty’s pull.</div>
+<div>But here—as <i>incog.</i> was the word—you may ask,</div>
+<div>How the Queen knew the Gull, notwithstanding his mask?</div>
+<div>Why, an Eagle looks sharper than I, or than you, Sir,</div>
+<div>And, without any spectacles, knows who is who, Sir.</div>
+<div>Each Masquer, in order presented, fell flat.</div>
+<div>And the <span class="smc">Cardinal</span> lifted his claw to his <em>hat</em>.</div>
+<div>First compliments over, the Revels are <span class="nw">brewing—</span></div>
+<div>Assist me, O Proteus! to tell what was doing,</div>
+<div>While Birds of all feathers, all habits, all sizes,</div>
+<div>All tongues, and all climates, were met in disguises.</div>
+<div class="i1"><span class="ns">      </span>First the huge <span class="smc">Albatross</span>, with his crony, the <span class="smc">Penguin</span>,</div>
+<div>(Like most other sea-faring folk, over sanguine)</div>
+<div>Had hop’d their identity nicely to veil,</div>
+<div>By attempting the waddle and cry of the <span class="smc">Quail</span>.</div>
+<div>Not to mention the <span class="smc">Manakin</span>, too—little varlet!</div>
+<div>Who, because he was born to be crested with scarlet,</div>
+<div>And wears a blue spencer, so sparkish and <span class="nw">glossy,—</span></div>
+<div>Not satisfied thus to look handsome and saucy,</div>
+</div></div>
+
+<div class="plate fp">
+<div class="vcenter">
+<figure>
+<div class="ib"><div class="rt"><small><i>To face <a href="#pg6">p. 6.</a></i></small></div>
+<img src="images/illo6.jpg" alt="[Plate]"></div>
+<figcaption>
+<div class="poetry-container">
+<div class="poetry">
+<div><i>The Empress receiv’d them with affable grace</i>,</div>
+<div>Though ’twas notic’d, she coldly accoſted the <i>Gull</i>:</div>
+</div></div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div><a id="pg7" href="#pg7"><span class="pagenum"><span
+ class="ns">[</span>7<span class="ns">]
+ </span></span></a>The <em>helmet</em> put on of the great <span class="smc">Cassowary</span>,</div>
+<div>So fierce!—you’d have back’d him to fight with a Fairy,</div>
+<div>The <span class="smc">Booby</span>, by nature a blockhead confest,</div>
+<div>In the top-knot and train of the <span class="smc">Peacock</span> was drest;</div>
+<div>But of all whom the stratagem aim’d to seduce,</div>
+<div>He could make but two converts—the <span class="smc">Gull</span> and the <span class="smc">Goose</span>.</div>
+<div class="tri1">The said Goose, with her distant Relation, <span class="smc">Goosander</span>,</div>
+<div class="tri2">(As the husband of each was afraid to command her,)</div>
+<div class="tri3">Wore the breeches ... I mean, wore the garb, of the <span class="smc">Gander</span>.</div>
+<div>The <span class="smc">Coot</span>, and the <span class="smc">Curlew</span>, the <span class="smc">Mallard</span>, and <span class="smc">Teal</span>,</div>
+<div>(For once, and for ever, their names to conceal,)</div>
+<div>To the <span class="smc">Razor-bill</span> went with a singular <span class="nw">suit—</span></div>
+<div>That the webs he would slit of each membranous foot;</div>
+<div>From a cunning conceit that the length of their toes</div>
+<div>Would throw dust in the eyes of their natural foes.</div>
+<div>“The chief reason,” said they, “why the favor we ask ye,</div>
+<div>Is because, as we hear, little Count Borowlaski</div>
+<div>Last night, for a Pigmy, was chas’d by a <span class="smc">Crane</span>,</div>
+<div>But, by standing on tip-toe, escap’d being slain;</div>
+<div>And it matters but little, since life is so sweet,</div>
+<div>If we save it by slitting, or stretching, our feet.”</div>
+<div class="tri1">The <span class="smc">Buzzard</span>,—a mighty weak kind of a fowl,</div>
+<div class="tri2">Hit on no better method of seeming an <span class="smc">Owl</span>,</div>
+<div class="tri3">Than by catching a Mouse, and affecting to howl.</div>
+<div><a id="pg8" href="#pg8"><span class="pagenum"><span
+ class="ns">[</span>8<span class="ns">]
+ </span></span></a>The <span class="smc">Butcher-bird</span>, too, changing battle for love,</div>
+<div>In the plumes of a <span class="smc">Pigeon</span>, made up to a dove:</div>
+<div>He could manage the billing, though out in the <span class="nw">cooing—</span></div>
+<div>As well might a <em>Kitten</em> sham <em>Cow</em> ... and be mooing!</div>
+<div>But his dove in a twinkling escap’d from his view,</div>
+<div>And return’d, in the crest of a fierce <span class="smc">Cockatoo</span>:</div>
+<div>Whilst ye, tiny <span class="smc">Tits</span>!—both the <em>lark</em>, and the <em class="nw">mouse—</em></div>
+<div>Drest your legs up in feathers, and call’d yourselves <span class="smc">Grouse</span>.</div>
+<div>But it would surely have forc’d an old hermit to laugh,</div>
+<div>Had he seen the gay <span class="smc">Finches</span>,—<em>gold</em>, <em>green</em>, <em>bull</em>, and <em>chaff</em>,</div>
+<div>By vanity blinded, and panting for praise,</div>
+<div>As <span class="smc">Swans</span>, or as <span class="smc">Turkeycocks</span>, dancing the hays!</div>
+<div>Conceive, too—but I can’t conceive it if you can,</div>
+<div>Little <span class="smc">Wren</span> bending under the beak of the <span class="smc">Toucan</span>!</div>
+<div>While the Toucan himself, though an hundred times bigger,</div>
+<div>Votes his own bill a bore,—as you’ll easily figure.</div>
+<div>Not a bird of the air can you bring me whose belly</div>
+<div>Can half as much hold as the pouch of the <span class="smc">Peli</span>-</div>
+<div><span class="smc">Can</span>:—yet in despite of his size and his maw,</div>
+<div>(’Twas in vain to object) he <em>would</em> come as a <span class="smc">Daw</span>!</div>
+<div class="tri1">And what shall we think of the <span class="smc">Nightingale’s</span> folly,</div>
+<div class="tri2">Who, no longer “most musical, most melancholy,”</div>
+<div class="tri3">A green Domino wore, and kept screaming “poor Polly!”</div>
+<div>Whilst <span class="smc">Poll</span> was like other pragmatical Youngsters,</div>
+<div>Who, because they are talkers, must set up for songsters.</div>
+</div></div>
+
+<div class="plate fp">
+<div class="vcenter">
+<figure>
+<div class="ib"><div class="rt"><small><i>To face <a href="#pg8">p. 8.</a></i></small></div>
+<img src="images/illo8.jpg" alt="[Plate]"></div>
+<figcaption>
+<div class="poetry-container">
+<div class="poetry">
+<div>_______ Poll was like other pragmatical Youngſters,</div>
+<div>Who, because they are talkers, must set up for Songſters.</div>
+</div></div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="poetry-container">
+<div class="poetry"><div><a id="pg9" href="#pg9"><span class="pagenum"><span
+ class="ns">[</span>9<span class="ns">]
+ </span></span></a>But look, if you love me, at Signor <span class="smc">Flamingo</span>,</div>
+<div>Who, in spite of his person and outlandish lingo,</div>
+<div>His spindles close up to his body is buckling,</div>
+<div>To fit on in their stead the squab legs of a <span class="smc">Duckling</span>!</div>
+<div class="tri1">He came from the banks of the fam’d Oroonoko,</div>
+<div class="tri2">But in mix’d conversation, was dull as the <span class="smc">Cuckoo</span>,</div>
+<div class="tri3">For, say just what you would, he still answer’d “tocoko!”</div>
+<div>But the <span class="smc">Barnacle</span> best play’d his part at our Masque;</div>
+<div>“The Barnacle!—how?”—Yes, I thought you would ask:</div>
+<div class="tri1">Why, he look’d like himself, to be sure, but, to boot,</div>
+<div class="tri2">Might be taken for <span class="smc">Gander</span>, <span class="smc">Drake</span>, <span class="smc">Puffin</span>, or <span class="smc nw">Coot;—</span></div>
+<div class="tri3">So he spar’d the expence of a Masquerade <span class="nw">suit.—</span></div>
+<div>If any one there could be odder than that,</div>
+<div>’Twas that leathery, feathery mongrel, the <span class="smc">Bat</span>,</div>
+<div>Who, when told that no ticket admitted a <em class="nw">Mouse,—</em></div>
+<div>Took huff as a <em>bird</em>, and flew out of the house.</div>
+<div class="tri1">The <i>Flying-fish</i>, too, shall come in for his share,</div>
+<div class="tri2">Who in haste from the ocean contriv’d to be there,</div>
+<div class="tri3">Just to make the <i>Bird-fanciers</i> puzzle and stare.</div>
+<div>But see from the mountains of Scotland, the <span class="smc nw">Ousel—</span></div>
+<div>Our motley community bent to <span class="nw">bamboozle—</span></div>
+<div>Doff his crest, and look <em>sharp</em>, in the bill of a <span class="smc">Snipe</span>,</div>
+<div>Though to mimick the <em>whistle’s</em> too much for his pipe.</div>
+<div>Next, the <span class="smc">Ptarmigan</span> plenty of ridicule draws;</div>
+<div>For, though booted with feathers quite down to his claws,</div>
+<div><a id="pg10" href="#pg10"><span class="pagenum"><span
+ class="ns">[</span>10<span class="ns">]
+ </span></span></a>Yet, neglecting to shave them,—neglecting to gather,</div>
+<div>In support of his part, one appropriate feather,</div>
+<div>The lubberly Simpleton hopes he may pass</div>
+<div>For the delicate <span class="smc">Lapwing</span>!—see “Lap-dog and Ass!”</div>
+<div>Then the <span class="smc">Water-hen</span>—born (though you smile at the thing)</div>
+<div>With two spiders for claws, and a spur at each wing,</div>
+<div class="tri1">Now, shifting her spurs from her wings to her toes,</div>
+<div class="tri2">With a comb in her head, and cock-feathers for clothes,</div>
+<div class="tri3">Takes her oath she is <em>game</em>, and e’en fancy she crows!</div>
+<div>“But of all the brave birds that I ever did see,”</div>
+<div>Give me, for my money, the <span class="smc">Ruff</span>, and the <span class="smc">Ree</span>!</div>
+<div>For because they wear <i>epaulettes</i>, quarrel and fight,</div>
+<div>Each brisk little soldier behold <em>Serjeant</em> <span class="smc nw">Kite!—</span></div>
+<div>But the queerest exchange in the whole Masquerade,</div>
+<div>Was that by the <span class="smc">Woodcock</span> and <span class="smc">Bottlenose</span> made:</div>
+<div>Perhaps you may think ’twas of claws or of <span class="nw">quills;—</span></div>
+<div>Not a whit, Sir,—no less than a barter of <em>bills</em>!</div>
+<div>Though the diff’rence betwixt ’em, in my way of judging,</div>
+<div>Was the same that we see ’twixt a bodkin and bludgeon.</div>
+<div>But to all that love laughing I hasten to shew</div>
+<div>A Lilliput Lady, and Brobdignag<!-- TN: as printed --> Beau.</div>
+<div>Since the day you were born, little friends did you ever</div>
+<div>See an <span class="smc">Ostrich</span> gallanting a <span class="smc">Humming-bird</span>?—“Never.”</div>
+<div class="tri1">Then, open your eyes, and I’ll show a <span class="nw">sight:—</span></div>
+<div class="tri2">Do but mark her unsuitable Sweet-heart’s delight,</div>
+<div class="tri3">While she daintily murmurs and sings round her Knight,</div>
+</div></div>
+
+<div class="plate fp">
+<div class="vcenter">
+<figure>
+<div class="ib"><div class="rt"><small><i>To face <a href="#pg10">p. 10.</a></i></small></div>
+<img src="images/illo10.jpg" alt="[Plate]"></div>
+<figcaption>
+<div class="poetry-container">
+<div class="poetry">
+<div>Since the day you was born, little friends, did you ever</div>
+<div>See an Oſtrich gallanting a Humming Bird? — Never.</div>
+</div></div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="poetry-container">
+<div class="poetry"><div><a id="pg11" href="#pg11"><span class="pagenum"><span
+ class="ns">[</span>11<span class="ns">]
+ </span></span></a>Now, nestling amongst the thick plumes of his tail,</div>
+<div>Now perch’d on his beak—like a sprat on a whale!</div>
+<div>While with monstrous endearment, and dalliance uncouth,</div>
+<div>Each caress is repaid by her camel-like Youth.</div>
+<div>The ungainly Philander, with tender advance,</div>
+<div>Is now breaking his muscular shanks to a dance;</div>
+<div>Now, veering and steering with cumbersome grace,</div>
+<div>The quick-steps of his minikin Mistress to trace,</div>
+<div>In vain her huge Romeo would bend, at her beck,</div>
+<div>The languishing cable he rears as a neck!</div>
+<div>That Cupid is blind we have evidence ample,</div>
+<div>But sure never a rule had so rich an <span class="nw">example!—</span></div>
+<div>That this cooing Colossus ... this two-legged <span class="nw">Tree ...</span></div>
+<div>Should succeed with a bird you would take for a <span class="nw">Bee!—</span></div>
+<div>But enough—for my memory sadly it poses,</div>
+<div>To follow them thus through their Metempsychoses;</div>
+<div>You may guess at the rest—but ’twill yield us some fun to</div>
+<div>Observe in that corner a notable Junto,</div>
+<div>Who had met by agreement to quizz, and to hoax,</div>
+<div>As they came within view, the <em>transmogrified</em> <span class="nw">folks;—</span></div>
+<div>Though the <span class="smc">Bishop</span>, the <span class="smc">Pope</span>, and the <span class="smc">Cardinal</span>, duly</div>
+<div>Loud censures pronounc’d, when their tongues grew unruly,</div>
+<div>“And pray what were the names of this merciless Quorum,</div>
+<div>So bitter that none stood in safety <span class="nw">before ’em?”—</span></div>
+<div>The <span class="smc">Parrot</span>, the <span class="smc">Magpie</span>, <span class="smc">Jay</span>, <span class="smc">Chatterer</span>, and <span class="smc">Daw</span>,</div>
+<div>With a few other <i>babillards</i> more than I saw,</div>
+<div><a id="pg12" href="#pg12"><span class="pagenum"><span
+ class="ns">[</span>12<span class="ns">]
+ </span></span></a>That musty old crusty old Tabby the <span class="smc">Owl</span>,</div>
+<div>Like a Judge in his wig, or a Monk in his cowl,</div>
+<div class="tri1">Sat muzzing behind, half apart from the rest,</div>
+<div class="tri2">By the glitter, and bustle, and babble distrest;</div>
+<div class="tri3">Sorely wishing ’twere time to slink home to her nest.</div>
+<div>Her poll in her shoulders, her hooting-pipe mute,</div>
+<div>With a bird in her beak, and a mouse in each foot,</div>
+<div>Half listening, half dozing—now scolding, now tickled,</div>
+<div>While in vinegar sauce reputations were pickled,</div>
+<div class="tri1">Her eye-lids, where Dulness look’d wise in a frown</div>
+<div class="tri2">Now stretch’d in a goggle—now gravely let down,</div>
+<div class="tri3">She dreams in a study far muddier than <span class="nw">brown.—</span></div>
+<div class="i1"><span class="ns">      </span>But ’tis time to rejoin the satirical party,</div>
+<div>And learn, if we can, why they’re laughing so hearty;</div>
+<div>Though so many the talkers—the list’ners so few,</div>
+<div>That ’tis well if we bring away one word in two.</div>
+<div>The sign for unmasking had now taken place,</div>
+<div>And each guest was betray’d by his feathers, or face.</div>
+<div>Our venomous Critics now sharpen’d their looks,</div>
+<div>And whatever was curious went down in their books.</div>
+<div>First, the fine <span class="smc">Bird of paradise</span>—every one knew it,</div>
+<div>By its train thrice as long as the body that drew it.</div>
+<div>Here Envy herself could do nothing but <span class="nw">praise—</span></div>
+<div>To the keen disappointment of Parrots, and Jays.</div>
+<div class="tri1"><a id="pg13" href="#pg13"><span class="pagenum"><span
+ class="ns">[</span>13<span class="ns">]
+ </span></span></a>Yet they peck’d at the <span class="smc">Peacock</span>:—“See how he assumes!</div>
+<div class="tri2">With his tail all astrut as he swims round the <span class="nw">rooms!—</span></div>
+<div class="tri3">One would swear that his croup had been nick’d by the grooms.”</div>
+<div>(<i>Jay</i>.) “That impudent <span class="smc">Goose</span>!—one may well understand <span class="nw">her—</span></div>
+<div>How close would I coop her, if I were the <span class="nw">Gander!”—</span></div>
+<div>(<i>Magpie</i>.) “Hark!—can that be a bird?—it more bellows than <span class="nw">sings—</span></div>
+<div>Or a bull seeing masks, under favour of <span class="nw">wings?”—</span></div>
+<div>(<i>Daw</i>.) “’Tis a <span class="smc">Bittern</span>; they say he’s a <i>Heron</i> by race;</div>
+<div>But sure never bird had a <em>warble</em> so bass!</div>
+<div>Perhaps he is come from Cape Horn, he is fagg’d,</div>
+<div>And is roaring for hunger.”</div>
+<div><span class="pr8">(<i>Chatterer</i>.)</span>                     “I wish he were <span class="nw">gagg’d!—</span></div>
+<div>But see, here’s another—<em>this</em> comes from <span class="nw">Brazil;—</span></div>
+<div>What a figure!—let’s kill it, and stuff it.”—“We will.”</div>
+<div>“His back’s like the mantle that covers a Judge,</div>
+<div>His breast like a Pigeon’s, so burly and budge,</div>
+<div>And his bill!—not a spit but is shorter, <span class="nw">I vow:—</span></div>
+<div>What a prize to a farmer for making his <span class="nw">mow!”—</span></div>
+<div>(<i>Daw</i>.) “Nay, if <em>bills</em> are your taste, look behind you I <span class="nw">pray ... O!</span></div>
+<div>My nest against yours that yon bird’s the <span class="smc">Calao</span>.</div>
+<div><a id="pg14" href="#pg14"><span class="pagenum"><span
+ class="ns">[</span>14<span class="ns">]
+ </span></span></a>A bill!—no, a scythe, with its grindstone annex’d</div>
+<div>With edges and saws of all colours perplex’d.</div>
+<div>Whate’er be its use in the business of food,</div>
+<div>’Tis a rare apparatus for drawing of blood!”</div>
+<div>(<i>Parrot</i>.) “Look at yon pert <span class="smc">Avoset</span>—tall as a steeple!</div>
+<div>How she turns up her saucy long nose at the people!</div>
+<div>Then that filthified fish-eating gawky, the <span class="smc">Auk</span>,</div>
+<div>That stands up like an Orator going to <span class="nw">talk—</span></div>
+<div class="tri1">Yet it matters not much how she stands on her <span class="nw">legs,—</span></div>
+<div class="tri2">But if I were a man, and lov’d spoon-meat—i’fegs;<!-- TN: means "in faith" --></div>
+<div class="tri3">I’d look twice ere I ventur’d to bob for her eggs;</div>
+<div>For, my dear, where d’ye think she deposits her stock?</div>
+<div>Why, each stuck by itself on its needle of rock!”</div>
+<div>(<i>Daw</i>.) “Do look at the <span class="smc">Crane Balearic</span>—what <span class="nw">paces!—</span></div>
+<div>Did Vestris or Parisot teach her the graces?</div>
+<div>See the slip-shoulder’d thing, how she pokes as she goes,</div>
+<div>With her back in the air, and her Bill at her <span class="nw">toes!—</span></div>
+<div>But what Fright have we here?”</div>
+<div class="i8">                          “’Tis a <span class="smc">Barbet</span>, I’ve heard,”</div>
+<div>(<i>Magpie</i>,) “Then I’m glad <em>I’m</em> no Barbet:—a beak with a <span class="nw">beard!”—</span></div>
+<div>(<i>Jay</i>.) “That’s the <span class="smc">Bee-eater</span>, is it not?”</div>
+<div class="i10">                                      “So they report.”</div>
+<div>(<i>Magpie</i>) “Well!—his back’s long enough, if his legs are too short:</div>
+</div></div>
+
+<div class="plate fp">
+<div class="vcenter">
+<figure>
+<div class="ib"><div class="rt"><small><i>To face <a href="#pg15">p. 15.</a></i></small></div>
+<img src="images/illo15.jpg" alt="[Plate]"></div>
+<figcaption>
+<div class="poetry-container">
+<div class="poetry">
+<div>_______ “The Dodo! The Dodo!”</div>
+</div></div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div><a id="pg15" href="#pg15"><span class="pagenum"><span
+ class="ns">[</span>15<span class="ns">]
+ </span></span></a>And then the black stock!—that’s to shew he’s a <span class="nw">male—</span></div>
+<div>Not forgetting <em>two horns</em>, growing out of his tail.”</div>
+<div>(<i>Daw</i>.) “Fie, Mag! you grow scurrilous—<em>feathers</em>, not horns;</div>
+<div>An antler disgraces—a feather <span class="nw">adorns.—</span></div>
+<div>But what hook-nose is here? pri’thee look at her placket,</div>
+<div>Be-patch’d and be-speckled like Harlequin’s jacket,</div>
+<div>Or, to judge by her <em>marks</em>,—though the notion is <span class="nw">droll,—</span></div>
+<div>She seems just coming out with the <i>petite verole</i>.”</div>
+<div>(<i>Jay</i>.) “I’m told ’tis the <span class="smc">Curlew</span>—a stranger to me,</div>
+<div>As I never change visits with Ladies at <span class="nw">sea.—</span></div>
+<div>But look at that Quizz, and be grave if you can;</div>
+<div>’Tis the <span class="smc">Cushew</span>—with legs like the flesh of a man:</div>
+<div>As to humps on the <em>back</em>; they’re a blemish one <span class="nw">knows—</span></div>
+<div>But who ever heard of a hump on one’s <span class="nw"><em>nose</em>?—</span></div>
+<div class="tri1">(<i>Daw</i>.) But heigh!—look at the <i>Owl</i>—she seems quite in a fuss;</div>
+<div class="tri2">I never yet saw the old Dowager <span class="nw">thus—</span></div>
+<div class="tri3">Why, she’s wriggling and giggling ... exactly like <em>us</em>!</div>
+<div>Pray, Ma’am, what’s the matter?”</div>
+<div>(<i>Owl</i>.)————————“The <span class="smc">Dodo</span>! the <span class="smc nw">Dodo!—</span></div>
+<div>“Where? which, Ma’am?”—“There! there! do but look at it—<span class="nw">O do!”</span></div>
+<div>(<i>Daw</i>.) “I see it! I see it!—O would I were stronger!</div>
+<div>I shall die, I shall burst, if I look any longer:</div>
+<div>Who bred it?—who fed it?—What is it, good <span class="nw">Owl?—</span></div>
+<div>(<i>Owl</i>.) “Why, a logger-head Turtle half turned to a fowl!</div>
+<div><a id="pg16" href="#pg16"><span class="pagenum"><span
+ class="ns">[</span>16<span class="ns">]
+ </span></span></a>Or a wool-sack alive!—or a Porpoise with <span class="nw">wings!—</span></div>
+<div>(I’d be seen at noon day but to hear how it <span class="nw">sings!—)</span></div>
+<div>Or in short—if I dare such a fancy set <span class="nw">up—</span></div>
+<div>’Tis a <em>Chicken-Rhinoceros</em>, ready to pup!</div>
+<div>What a beak!—like two barrels, one black and one red,</div>
+<div>On a head bluff and bulky, just like ... Beachy Head!</div>
+<div>At the root of its chaps—like a ring on a <span class="nw">pig—</span></div>
+<div>How becoming that circular thicket of wig!</div>
+<div>When it yawns, it must petrify all the beholders</div>
+<div>By jerking its jobbernowl back on its <span class="nw">shoulders!—</span></div>
+<div>What the plague does it carry stuff’d out from its <span class="nw">throttle,—</span></div>
+<div>Like cherries, or strawberries, cramm’d in a pottle?</div>
+<div>But to balance the load, on its back there’s a bump,</div>
+<div>And, for tail, a few feathers, see! perk’d on its hump,</div>
+<div>Then its wings!—not a <span class="smc">Dab-chick</span> has smaller or shorter;</div>
+<div>Sure she never can fly,—or how <em>can</em> they support her?</div>
+<div>But for this there is full compensation <em class="nw">below—</em></div>
+<div>Upon legs such as those might an Elephant go!</div>
+<div>But its eyes!—’twere a sin to forget ’em—good lack!</div>
+<div>What peepers were ever so round or so black?</div>
+<div>Then its air, and address!—and its walk!—but <span class="nw">enough!—</span></div>
+<div>Created it seems but to stare and to stuff.”</div>
+<div>(<i>Chatterer</i>.) “Well said Madam Owl—for a maiden oration;</div>
+<div>Who says you are dull?—’tis a base <span class="nw">fabrication:—</span></div>
+<div><a id="pg17" href="#pg17"><span class="pagenum"><span
+ class="ns">[</span>17<span class="ns">]
+ </span></span></a>But the length of her speech has exhausted her quite,</div>
+<div>And that <i>Jupiter’s nod</i> bids a solemn good <span class="nw">night!—</span></div>
+<div>Adieu, then, dear Dodo!—most marvellous <span class="nw">lubber!—</span></div>
+<div>Choice compound of clumsiness, blunders, and <span class="nw">blubber!—</span></div>
+<div>But I turn from this bird of all birds without regret,</div>
+<div>For here comes a contrast, in form of an <span class="smc">Egret</span>:</div>
+<div>That leg was a truncheon—while this is a stick:</div>
+<div>This bill is a bayonet—that was a brick.</div>
+<div>But bless us! who’s here?”</div>
+<div class="i8">                      “’Tis the <span class="smc">long tailed Finch</span>.”</div>
+<div>(<i>Chatterer</i>.) “Long, indeed!—thus a bird takes an ell for an <span class="nw">inch.—</span></div>
+<div>But pray, now, that fine-coated Gentleman mark,</div>
+<div>With a mouth like a pen, and a throat like a shark:</div>
+<div>By the din that he keeps, one would think for the night</div>
+<div>He’s enacting the part of a spinning-wheel.”</div>
+<div class="i12">                                           <span class="nw">“Right:—</span></div>
+<div>But whatever he seems, he’s a <span class="smc">Goat sucker</span>, Madam!”</div>
+<div>(<i>Chatterer</i>.) “Then I’d quiet his tongue with <em>my</em> goats, if <span class="nw">I had ’em.</span></div>
+<div>But look!—here’s the <span class="smc">Swallow</span> advancing to greet us,</div>
+<div>With her mouth as wide open as though she would eat us;</div>
+<div>And see how her tail quite asunder has started,</div>
+<div>Just as if all its feathers had quarrell’d and parted.</div>
+<div>I suppose she will shortly <em>abscond</em> for the <span class="nw">season—</span></div>
+<div>You and I, miss, have nothing to do with the <em>reason</em>;</div>
+<div><a id="pg18" href="#pg18"><span class="pagenum"><span
+ class="ns">[</span>18<span class="ns">]
+ </span></span></a>But this I <em>will</em> say—when I take to <em>my</em> pinions,</div>
+<div>I don’t leave the bounds of the Eagle’s dominions:</div>
+<div class="tri1">To be sure she has very particular <span class="nw">ways—</span></div>
+<div class="tri2">What a mystery hangs o’er her <span class="nw"><em>travelling days</em>!—</span></div>
+<div class="tri3">If she goes, ’tis incog.—or she hides if she <span class="nw">stays.—</span></div>
+<div>But tell me the name of yon swaggering youth,”</div>
+<div>(<i>Daw</i>.)  “He’s the <span class="smc">Crested Black Vulture</span>, Miss.”</div>
+<div><span class="pr8">(<i>Chatterer</i>.)</span>               “<em>Crested</em> forsooth!</div>
+<div>Such a title is, sure, on all titles a <span class="nw">jest;—</span></div>
+<div>Get a lump on your head—and then swear ’tis a <em>crest</em>!</div>
+<div>Then, his beak, as I live, is half black and half <span class="nw">blue—</span></div>
+<div>Has he found a fine name for <em>this</em> accident too?</div>
+<div>But the best is his feathery collar, or border,</div>
+<div>On which, without doubt, he will found a new Order.</div>
+<div>Were I, though, a Spark with so haughty a mein,</div>
+<div>I’d alter my manners, and learn to live clean;</div>
+<div>I’d dine on fresh meat, at the least, were I able,</div>
+<div>And few courses of <em>carrion</em> should come to my <span class="nw">table.—</span></div>
+<div class="tri1">Apropos of that matter, two birds are before us,</div>
+<div class="tri2">Whose habits I hold to be quite <span class="nw">indecorous—</span></div>
+<div class="tri3">The <span class="smc">Rice-bird</span>, and <span class="smc">Tumbler</span>—let’s hoot them in chorus!</div>
+<div>E’en a Saint, or a Stock-fish, would storm at the first,</div>
+<div>For cramming his crop till his bowels are burst:</div>
+<div>The second—yes—look how he tumbles and reels,</div>
+<div>Having swill’d till he knows not his head from his heels!</div>
+<div><a id="pg19" href="#pg19"><span class="pagenum"><span
+ class="ns">[</span>19<span class="ns">]
+ </span></span></a>For the Rice-bird—I blame more than wonder <span class="nw">perhap—</span></div>
+<div>But who taught the Tumbler his way to a <span class="nw"><em>tap</em>?”—</span></div>
+<div>(<i>Parrot</i>.) “Those are <span class="smc">Cuckows</span>, I think—the impertinent <span class="nw">Pests!—</span></div>
+<div>So, Ladies, I’d have you look well to your <em class="nw">nests.—</em></div>
+<div>But tell me, Miss <i>Pye</i>, who is that whipper-<span class="nw">snapper?”—</span></div>
+<div>(<i>Magpie</i>.) “Who is it, Poll Parrot!—Not know the <span class="smc">Didapper</span>!</div>
+<div>A good Diver I’m told; but <em>he</em> surely must fail</div>
+<div>In his <em>walking</em>, (pray look?) who has legs at his tail!</div>
+<div>He knows his weak side, it should seem, for he makes</div>
+<div>A great fuss with his fishing in rivers and lakes.”</div>
+<div>(<i>Jay</i>.) “What great stupid bird have we here?—Can it <span class="nw">speak?”—</span></div>
+<div>(<i>Daw</i>.) “The very same question just popp’d to <em>my</em> beak.”</div>
+<div>(<i>Magpie</i>.) “He’s by nature a ninny—by title a <span class="smc nw">Bustard—</span></div>
+<div>As fond of good worms, as a Cit of good custard;</div>
+<div class="tri1">And, to shew that he carries more body than <span class="nw">brains,—</span></div>
+<div class="tri2">When the glutton has din’d himself fat on the plains,</div>
+<div class="tri3">Too sick to be soaring, he’s kill’d for his pains.”</div>
+<div>(<i>Parrot</i>.) “Make room for Miss <span class="smc">Demoiselle</span>!”</div>
+<div><span class="pr8">(<i>Jay</i>.)</span>                 “Demoiselle!—pooh! <span class="nw">pooh!—</span></div>
+<div>’Tis no less than that very fine Lady the <span class="smc">Hoopoo</span>:</div>
+<div><em>One</em> row of crest-feathers might serve me or you;</div>
+<div>But <em>she’s</em> never contented with fewer than <span class="nw">two.—</span></div>
+<div><a id="pg20" href="#pg20"><span class="pagenum"><span
+ class="ns">[</span>20<span class="ns">]
+ </span></span></a>But see, just return’d from a voyage, the <i>Pewit</i>;</div>
+<div>He’ll treat us, I fear, with a spice of his sea-wit:</div>
+<div>No—he cuts us, I vow!—I conclude that with him</div>
+<div>No birds are worth knowing but birds that can swim.”</div>
+<div>(<i>Daw</i>.) “That long-legged Stick is a <span class="smc">Stork</span>, I <span class="nw">suppose;—</span></div>
+<div>Pray why does he strut so, and rise on his toes?</div>
+<div class="tri1">No creature his stars has less reason to thank:</div>
+<div class="tri2">When you’ve mentioned his neck, and his bill, and his shank,</div>
+<div class="tri3">There’s no more to be said—for his body’s a blank;</div>
+<div>And yet this was the Tyrant commissioned to teaze up</div>
+<div>The Frogs in their fancy for Kings—’tis in Æsop.</div>
+<div>Nay—what’s more amazing—this fop of the tribe is</div>
+<div>In Egypt ador’d by the nick-name of <i class="nw">Ibis.—</i></div>
+<div>But I’m all in a flutter!—a <em>Soldier</em>, my dear!”</div>
+<div>(<i>Magpie</i>.) “A Soldier!—who is it?”</div>
+<div class="i10">                             “The bold <span class="smc nw">Grenadier—</span></div>
+<div>So eager, they tell me, so fierce to engage,</div>
+<div>That, when put on his mettle, he’ll fight through his cage.</div>
+<div>I could like, of all things, if you won’t think it cruel,</div>
+<div>’Twixt him and the <span class="smc">Butcher</span> to cook up a <span class="nw">duel.”—</span></div>
+<div>(<i>Jay</i>.) “But in all this gay party, the <span class="smc">Snow-bird</span> I miss.</div>
+<div>(<i>Chatterer</i>.) “No, I spied her just now:—what a simpleton ’tis!</div>
+<div>In winter she’s always in <em>white</em>.”</div>
+<div class="i12">                                     “Any reason?</div>
+<div>“Yes, a compliment paid to the <em>flakes</em> of the season.”</div>
+</div></div>
+
+<div class="plate fp">
+<div class="vcenter">
+<figure>
+<div class="ib"><div class="rt"><small><i>To face <a href="#pg21">p. 21.</a></i></small></div>
+<img src="images/illo21.jpg" alt="[Plate]"></div>
+<figcaption>
+<div class="poetry-container">
+<div class="poetry">
+<div>______ from flying or walking, now sat down at table,</div>
+<div>To a Pic-nic provided as each one was able.</div>
+</div></div>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="i1"><span class="ns">      </span><a id="pg21" href="#pg21"><span class="pagenum"><span
+ class="ns">[</span>21<span class="ns">]
+ </span></span></a>But should all this unmerciful prattle be penn’d,</div>
+<div>My story would never be brought to an end.</div>
+<div>So it only remains, with a few parting words,</div>
+<div>To take leave of this marvellous Meeting of Birds;</div>
+<div>Who, from flying or walking, now sat down at table</div>
+<div>To a <i>Pic-nic</i> provided as each one was able.</div>
+<div class="tri1">As the Guests were domestic—erratic—aquatic,</div>
+<div class="tri2">The dishes were various, the feeders ecstatic,</div>
+<div class="tri3">And the salt, too, that season’d the supper was Attic.</div>
+<div>The fish were delightfully drest by the <i>Cook</i>,</div>
+<div>Whom for this very purpose, without line or hook,</div>
+<div>In the shallows of Cornwall, the <span class="smc">Pelican</span> took.</div>
+<div>In a party so large you must easily think</div>
+<div>Some dissentions arose about victuals and drink.</div>
+<div class="tri1">Thus, the tongues of the delicate all were at work,</div>
+<div class="tri2">In abusing that foul-feeding savage the <span class="smc">Stork</span>,</div>
+<div class="tri3">For harpooning live frogs with his double-prong’d fork;</div>
+<div>While the <span class="smc">Bustard</span> by few was esteem’d over nice,</div>
+<div>For supping so sweetly on moles, and on mice.</div>
+<div>Then, the lovers of salad were fuming and huffing,</div>
+<div>At the very bad oil introduc’d by the <span class="smc">Puffin</span>.</div>
+<div>The <span class="smc">Blackbird</span>, beside, rais’d a host of deriders,</div>
+<div>For piling his plate up with dozens of spiders.</div>
+<div class="tri1">But the <span class="smc">Pelican</span> most was detested by all;</div>
+<div class="tri2">For the fish shovell’d into her pouch at a haul</div>
+<div class="tri3">Would have set up a moderate Fishmonger’s stall:</div>
+<div><a id="pg22" href="#pg22"><span class="pagenum"><span
+ class="ns">[</span>22<span class="ns">]
+ </span></span></a>Yet the herrings thus pack’d in her natural barrel</div>
+<div>(’Twas <em>this</em> that provok’d all the clamour and quarrel)</div>
+<div>She dreams not of eating—far less of <span class="nw">digesting—</span></div>
+<div>Till her leisure shall serve, while her babies are resting.</div>
+<div>No Pelican’s perfect, I grant:—what of <span class="nw">that?—</span></div>
+<div>She’s the best, <em>very</em> best, of all Mothers, that’s flat.</div>
+<div>For what other Mamma keeps a tap of good blood</div>
+<div>Running out at her breast for her family’s <span class="nw">good?—</span></div>
+<div>But among all the gluttons that peck’d at the feast,</div>
+<div>The <span class="smc">Hern</span> and the <span class="smc">Cormorant</span> lik’d themselves least;</div>
+<div>For both, though with ev’ry fair right to be <span class="nw">burst,—</span></div>
+<div>Poor things!—were as lanky at last as at first!</div>
+<div>Yet the Parrot seem’d most incommoded at supper,</div>
+<div>So much was her under lip cramp’d by the upper.</div>
+<div>The <span class="smc">Ostrich</span> was long but a mere stander-by,</div>
+<div>While his bowels would dismally grumble and cry.</div>
+<div>Such digestible dainties <em>his</em> stomach <span class="nw">rejected:—</span></div>
+<div>Never yet was, for him, a worse supper selected!</div>
+<div>So he pick’d a few stones which the place did inviron,</div>
+<div>Which he crumbled as bread in a nice mess of iron.</div>
+<div>“A supper of iron!—pray, Sir, was it <em>hot</em>?”</div>
+<div>No, my arch little rogue—I should think it was not.</div>
+<div>“But how did he get it, Sir?”—How!—what a question!</div>
+<div>You’d better have ask’d how he got the digestion:</div>
+<div class="tri1">For the <em>stuff</em>—that’s a matter he easily settles;</div>
+<div class="tri2">For instance—<em>our</em> Ostrich despising the victuals,</div>
+<div class="tri3">Fell to kissing the cook for the pots and the kettles.</div>
+<div class="i1"><span class="ns">      </span><a id="pg23" href="#pg23"><span class="pagenum"><span
+ class="ns">[</span>23<span class="ns">]
+ </span></span></a><span class="ns">      </span>While thus they were lining and moist’ning their clay,</div>
+<div>A choice Band of performers were piping away.</div>
+<div>But, as most knew the natural notes of the rest,</div>
+<div>It was voted by all—<em>Imitations</em> were best.</div>
+<div>The <span class="smc">Black-cap</span>, who often had plac’d himself snug,</div>
+<div>For the purpose of catching the <span class="smc">Nightingale’s</span> jug,</div>
+<div>Had listen’d so closely, and learnt it so pat,</div>
+<div>He was dubb’d the <i>mock Nightingale</i>, merely for <span class="nw">that:—</span></div>
+<div>So he jugg’d, and he trill’d, and he quaver’d so pretty,</div>
+<div>That his Master himself hardly knew his own ditty.</div>
+<div>Yet one thing in dudgeon the company <span class="nw">took—</span></div>
+<div>An occasional bass from the <span class="smc">Raven</span>, or <span class="smc">Rook</span>;</div>
+<div>Though the gravest were somewhat to laughter inclin’d,</div>
+<div>As the <span class="smc">Wag-tail</span> kept time by a jerk from <span class="nw">behind.—</span></div>
+<div>Then, the <span class="smc">Bulfinch</span> began—and ’tis well he was taught,</div>
+<div>For the note he was born to, is not worth a groat:</div>
+<div>But he prov’d an apt scholar; and soon, not a tone</div>
+<div>Nor an air cou’d he hear, but he made it his <span class="nw">own.—</span></div>
+<div>The <span class="smc">Gold-finch</span>, a qualified <em>Treble</em>, was there,</div>
+<div>And was prest to exhibit—but, though you may stare,</div>
+<div>This puppy preferr’d the whole ev’ning to pass,</div>
+<div>In prinking and dressing his plumes at the glass.</div>
+<div>But soon in the place of this pert little Antic,</div>
+<div>Rose a Singer of note from across the Atlantic;</div>
+<div>The <span class="smc">Mock-bird</span>—who beat all competitors hollow,</div>
+<div>By leading, where none had the courage to follow.</div>
+<div><a id="pg24" href="#pg24"><span class="pagenum"><span
+ class="ns">[</span>24<span class="ns">]
+ </span></span></a>Not content, like his mimicking sisters and brothers,</div>
+<div>To go out of himself, and to personate others,</div>
+<div class="tri1">He ravish’d all ears with such strains of his <span class="nw">own—</span></div>
+<div class="tri2">In a descant so solemn, so melting a <span class="nw">moan,—</span></div>
+<div class="tri3">As Apollo might breathe from his musical <span class="nw">throne!—</span></div>
+<div>But music’s no guard against mischief, ’tis found;</div>
+<div>For this vocal Magician, this Tyrant of sound,</div>
+<div>Has a trick—as with just indignation I <span class="nw">state—</span></div>
+<div>To decoy little warblers, by mocking the mate;</div>
+<div>But no sooner has manag’d his dupes to inveigle,</div>
+<div>Than he scares out their souls with the screams of an Eagle.</div>
+<div class="i1"><span class="ns">      </span>Now the tables were clear’d, and the Cock gave a <span class="nw">crow.—</span></div>
+<div>At the signal, her Majesty bow’d to them <span class="nw">low—</span></div>
+<div>Inuendo imperial! whence all were to gather,</div>
+<div>That their room was desir’d—than their company rather.</div>
+<div>So, with thanks to the King and his Consort for all,</div>
+<div>In three flirts of a wing, they had emptied the Hall.</div>
+</div>
+</div>
+
+<div class="fin"><small>THE END.</small></div>
+
+
+<div class="printer">
+<div>G. Woodfall, Printer,<br
+ >Paternoſter-row.</div>
+</div>
+
+
+
+<div class="adverts">
+<h2 title="Publisher advertisement"><a id="pg25" href="#pg25"><span class="pagenum"><span
+ class="ns">[</span>ads<span class="ns">]
+ </span></span></a><i>Books for Young Persons lately published by<br
+ >J. Mawman, 22, Poultry.</i></h2>
+
+
+<p>1. EVENING AMUSEMENTS; or, the <span class="allsc">BEAUTY</span> of the
+<span class="allsc">HEAVENS DISPLAYED</span>. In which several striking appearances
+to be observed every Evening in the Heavens, during the
+Year 1808, are described, and several means on various evenings
+are pointed out, by which the time of young persons may
+be innocently, agreeably, and profitably employed within doors.
+By <span class="smc">W. Frend, Esq.</span> M. A. Fellow of Jesus College, Cambridge.</p>
+
+<p>Neatly printed and enriched with Six Plates of the
+principal Constellations, price 3s. boards, by the same Author.</p>
+
+<div class="ctr">Intended to be continued annually,</div>
+
+<p>EVENING AMUSEMENTS for the year 1804, fourth
+Edition, 2s. 6d. boards.</p>
+<p class="noindent"><span class="nw">———————— 1805,</span> 1806 &amp; 1807, each 3s. boards.</p>
+
+<p>TANGIBLE ARITHMETIC; or the Art of Numbering
+made Easy, by means of an Arithmetical Toy. 7s. 6d.
+boards.</p>
+
+<p>2. An ENTERTAINING and INSTRUCTIVE
+GEOGRAPHICAL GAME, on an entirely new plan,
+peculiarly adapted to the Use of Schools and Seminaries of
+Education, by the Editor of the “Parent’s Friend.” Recommended
+by <span class="smc">W. Frend, Esq.</span> 7s. 6d. in a box.</p>
+
+<p>3. YOUTH’s HISTORICAL GUIDE, together with
+the Evidences of the Christian Religion, comprehending an
+Introduction to History in general, History of the Jews,
+Historical Heads of Greece, Rome, and England, &amp;c. By <span class="smc">John
+Sabine</span>. 12mo. 4s. bound.</p>
+
+<p>4. HOLIDAYS at HOME, written for the Amusement of
+Young Persons. By <span class="smc">Charlotte Sanders</span>. 12mo. 3s. 6d.
+bound.</p>
+
+<div class="ctr">By the same Author,</div>
+
+<p>5. The LITTLE FAMILY, written for the Amusement
+and Instruction of Youth. 4s. bound.</p>
+
+<p>6. EDMUND, a Tale for Children. 1s. 6d. half-bound.</p>
+
+<p>7. HISTORICAL DIALOGUES for <span class="allsc">YOUNG PERSONS</span>
+of both Sexes; particularly designed for the Elder Pupils of
+Schools. By <span class="smc">Mary Hays</span>, Author of Female Biography,
+&amp;c. 3 vols. 12mo. 12s. boards.</p>
+
+<p>8. STUDY of ASTRONOMY adapted to the Capacities
+of Youth, in Twelve Familiar Dialogues, between a Tutor and
+his Pupil, explaining the general Phænomena of the Heavenly
+Bodies, the Theory of the Tides, &amp;c. illustrated with copperplates.
+By <span class="smc">John Stedman</span>. 4th edit, bound 3s. 6d.</p>
+
+</div>
+
+<hr class="ww" >
+
+
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK THE EAGLE&#039;S MASQUE ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
